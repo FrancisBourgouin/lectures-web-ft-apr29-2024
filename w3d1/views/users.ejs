@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Index page!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body style="background-color:#333">
+    <header style="background-color:#b0b">
+      <h1>User page!</h1>
+      <h2>It is currently <%= new Date().toISOString() %></h2>
+    </header>
+    <main>
+      <% for(const user of users){ %>
+
+        <article style="color:#bada55;">
+          <p>Name: <%= user.name %></p>
+          <p>Email: <%= user.email %> </p>
+          <% if(user.isAdmin){ %>
+            <p>They are an admin</p>
+          <% } else { %>
+            <p>They are not an admin</p>
+          <% } %>
+          </article>
+          
+      <% } %>
+    </main>
+  </body>
+</html>
+
