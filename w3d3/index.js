@@ -42,7 +42,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/register", (req, res) => {
-  const templateVars = { error: req.cookies.error };
+  const { user } = fetchUserByEmail(req.cookies.email, thieves);
+  const templateVars = { error: req.cookies.error, user };
   res.clearCookie("error");
 
   return res.render("register", templateVars);
