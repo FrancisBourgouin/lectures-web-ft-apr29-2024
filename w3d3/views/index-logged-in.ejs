@@ -1,0 +1,26 @@
+<%- include('partials/_head.ejs') %>
+<section>
+	<h1>
+		<span>Super secret thief page !</span>
+	</h1>
+
+		<h2>
+			Hello <%= user.name %> !
+		</h2>
+</section>
+<section>
+	<main>
+		<div class="door">
+		</div>
+			<img src="<%= user.imagePath %>" alt="">
+
+		</main>
+		</section>
+	<section>
+		<form action="/logout" method="post">
+			<button type="submit">Log out</button>
+		</form>
+	</section>
+	</body>
+
+	</html>

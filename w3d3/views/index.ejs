@@ -1,0 +1,28 @@
+<%- include('partials/_head.ejs') %>
+<section>
+	<h1>
+		<span>Super secret thief page !</span>
+	</h1>
+</section>
+<section>
+	<main>
+		<div class="door">
+		</div>
+		</main>
+		</section>
+	<section>
+			<form action="/login" method="POST">
+				<label for="email">Enter your email</label>
+				<input id="email" type="email" name="email" placeholder="Enter your email!">
+				<label for="password">Enter your password</label>
+				<input id="password" type="password" name="password" placeholder="Enter your password!">
+				<button type="submit">Login!</button>
+			</form>
+			<p>
+				Not a thief yet? Please register by clicking <a href="/register">here</a> !
+
+			</p>
+	</section>
+	</body>
+
+	</html>

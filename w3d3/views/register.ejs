@@ -1,0 +1,43 @@
+<%- include('partials/_head.ejs') %>
+<section>
+	<h1>
+		<span>Become a super secret thief !</span>
+	</h1>
+</section>
+<% if(error){ %>
+
+	<section class="error">
+		<%= error %>
+	</section>
+<% } %>
+	<section>
+			<form action="/register" method="POST">
+				<label for="email">Enter your email</label>
+				<input required id="email" type="email" name="email" placeholder="Enter your email!">
+
+				<label for="name">Enter your name</label>
+				<input id="name" type="name" name="name" placeholder="Enter your name!">
+
+				<label for="imagePath">Enter your image path</label>
+				<input id="imagePath" type="imagePath" name="imagePath" placeholder="Enter your image path!">
+
+				<label for="password">Enter your password</label>
+				<input id="password" type="password" name="password" placeholder="Enter your password!">
+				<button type="submit">Register!</button>
+			</form>
+	</section>
+	</body>
+	<style>
+		.error{
+			padding:1em;
+			text-align: center;
+			margin:1em auto;
+			max-width:700px;
+
+			background:rgb(213, 105, 105);
+			border:0.5em solid rgb(173, 0, 0);
+			color:white;
+		}
+	</style>
+
+	</html>
