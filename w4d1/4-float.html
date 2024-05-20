@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Floats?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+    }
+
+    header {
+      width:300px;
+      height:300px;
+      margin-top:50%;
+      margin-left:auto;
+      background-color: #c0ffee;
+      padding: 50px;
+    }
+
+    header h1 {
+      float: left;
+    }
+
+    header h2 {
+      float: right;
+    }
+
+    header:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Evil Floats!</h1>
+      <h2>Making devs sad since '95</h2>
+    </header>
+  </body>
+</html>

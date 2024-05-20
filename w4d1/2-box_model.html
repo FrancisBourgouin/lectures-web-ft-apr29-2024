@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    div{
+      font-size:80px;
+      border:10px solid brown;
+      display: inline-block;
+      padding:30px;
+      background-color: bisque;
+      margin:30px;
+
+      width:200px;
+      height:200px;
+    }
+
+    div.content-box{
+      box-sizing:content-box;
+    }
+    div.border-box{
+      box-sizing:border-box;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Website title</h1>
+    </header>
+    <ul>
+      <li>Padding</li>
+      <li>Margin</li>
+      <li>Gap</li>
+    </ul>
+
+    <ul>
+      <li>Block elements</li>
+      <li>Inline elements</li>
+    </ul>
+    <div class="content-box">☕</div>
+    <div class="border-box">☕</div>
+  </body>
+</html>
