@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog posts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/data.js"></script>
+    <script src="/helpers.js"></script>
+    <script src="/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>AJAX ! :D 1 &lt; 5</h1>
+    </header>
+    <main>
+      <h1>What is AJAX ?</h1>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <input type="text" name="title" placeholder="Enter the title">
+        <textarea type="text" name="body" placeholder="Enter the body" ></textarea>
+        <button>Add the post</button>
+      </form>
+      <section class="posts">
+        <article>
+          <h1>Asynchronous JavaScript And XML</h1>
+          <p>
+            Normally, when we load a webpage, we load the entirety of it during the
+            request.
+          </p>
+          <p>
+            With AJAX, it's possible to create a request using JavaScript, and then do an
+            action with the received data.
+          </p>
+        </article>
+        <article>
+          <h1>JSON</h1>
+          <p>
+            Javascript Object Notation, is text that looks like basic object notation in
+            javascript.
+          </p>
+        </article>
+        <article>
+          <h1>HTML</h1>
+          <p>HTML is text, so we can send it and receive it!</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

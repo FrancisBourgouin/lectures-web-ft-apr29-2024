@@ -1,0 +1,77 @@
+:root {
+  --main-background-color: #b0b;
+  --secondary-background-color: rgb(129, 0, 129);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comic Sans MS";
+  padding: 1em;
+}
+
+header {
+  padding: 1em;
+  background: var(--main-background-color);
+}
+
+header h1 {
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+header h2 {
+  text-align: center;
+}
+
+header div {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 900px;
+}
+
+main article {
+}
+
+main article:nth-of-type(2n) {
+  border-color: #bada55;
+}
+
+article {
+  border: 5px solid black;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+article p.author {
+  text-align: right;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+}
+
+form input,
+form textarea,
+form button{
+  padding:1em;
+  border: 5px solid #b0b;
+  font-size:1.5em;
+  font-family: "Comic Sans MS";
+  background-color: white;;
+}
+
+form button:hover{
+  background-color: #b0b;
+  color:white;
+  cursor: pointer;
+}
