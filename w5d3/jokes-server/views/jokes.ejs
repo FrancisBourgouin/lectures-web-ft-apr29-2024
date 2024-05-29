@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <header>
+    <h1>Super jokes!</h1>
+    <a href="/jokes/new">Add a joke!</a>
+  </header>
+  <main>
+    <% for(const joke of jokes){ %>
+
+      <article>
+        <h1><a href="/jokes/<%= joke.id %>">Joke ID: <%= joke.id %></a></h1>
+        <p>Question: <%= joke.question %></p>
+        <% if(joke.name){ %>
+          <p>By: <%= joke.name %>, <%= joke.description %></p>
+        <% } else { %>
+          <p>By an unknown author...</p>
+        <% } %>
+      </article>
+    <% } %>
+  </main>
+</body>
+</html>
+
