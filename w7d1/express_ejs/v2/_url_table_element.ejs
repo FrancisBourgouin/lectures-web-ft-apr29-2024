@@ -1,0 +1,14 @@
+<tr>
+  <td><%= shortUrl %></td>
+  <td><%= longURL %></td>
+  <td>
+    <form method="GET" action="/urls/<%= shortUrl %>">
+      <input class="btn btn-outline-primary" type="submit" value="Update" />
+    </form>
+  </td>
+  <td>
+    <form method="POST" action="/urls/<%= shortUrl %>/delete">
+      <input class="btn btn-outline-danger" type="submit" value="Delete" />
+    </form>
+  </td>
+</tr>

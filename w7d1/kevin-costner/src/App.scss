@@ -1,0 +1,48 @@
+body {
+  background: #333;
+  color: #fff;
+  font-size: 24px;
+}
+
+.App {
+  text-align: center;
+}
+
+.Header {
+  background-color: #b0b;
+  padding: 1.5em;
+}
+
+.PlantList {
+  h1 {
+    color: #c0ffee;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+}
+
+.PlantListItem {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-weight: 900;
+  width: 45%;
+  padding: 2em 0;
+
+  border: 0.2em solid white;
+
+  span:last-of-type {
+    font-weight: 500;
+  }
+
+  &.wet {
+    border-color: green;
+  }
+  &.dry {
+    border-color: red;
+  }
+}
