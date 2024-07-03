@@ -1,0 +1,49 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+section.vtuber-face {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-areas:
+      "leftEye . rightEye"
+      ". nose ."
+      "mouth mouth mouth";
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+
+  .leftEye{grid-area:leftEye}
+  .rightEye{grid-area:rightEye}
+  .nose{grid-area:nose}
+  .mouth{grid-area:mouth}
+  
+  & > div{
+      display:inline-block;
+      background-color:white;
+      align-self: center;
+      margin:auto;
+  }
+  
+  .leftEye,
+  .rightEye,
+  .nose{
+      width:5em;
+      height:5em;
+      transform:scale(1);
+      transition:transform 100ms ease-in-out;
+  }
+
+  .mouth{
+      background-color:transparent;
+      height:10em;
+      width:100%;
+    .inside-mouth{
+      border:1em solid white;
+      width:100%;
+    }
+  }
+}
